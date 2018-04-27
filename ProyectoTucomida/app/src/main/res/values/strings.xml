@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Tu Comida</string>
+    <string name="user_text">Usuario</string>
+    <string name="password_text">Password</string>
+    <string name="login_text">Ingresar</string>
+    <string name="login_google_text">Ingresar con google</string>
+    <string name="register_text">Registrarse</string>
+    <string name="google_register_text">Inicia Sesión con tu cuenta de</string>
+    <string name="google_login_text">Ingresa con Google</string>
+
+
+    <string name="dish_text">Plato</string>
+    <string name="name_text">Nombre</string>
+    <string name="aprox_price_text">Precio Aproximado</string>
+
+
+    <string name="order_title_text">Pedido</string>
+    <string name="adress_text">Dirección</string>
+    <string name="number_of_dishes">Cantidad de platos</string>
+    <string name="approximate_value">Valor aproximado</string>
+    <string name="domicile_text">Domicilio</string>
+    <string name="order_confirm_text">Confirmar Pedido</string>
+    <string name="register_text2">Registrarse</string>
+
+
+    <string name="user_name_text">Usuario</string>
+    <string name="email_text">Email</string>
+    <string name="cancel_text">Cancelar</string>
+
+    <string name="comment_text">Comentarios</string>
+    <string name="add_comment_text">Agrega un comentario</string>
+    <string name="send_text">Enviar</string>
+
+    <string name="ingredients_text">Ingredientes</string>
+    <string name="time_text">Tiempo de preparación</string>
+    <string name="difficulty_text">Dificultad</string>
+    <string name="step_text">Paso a paso</string>
+    <string name="video_text">Video de preparación</string>
+    <string name="ask_ingredients_text">Pedir Ingredientes</string>
+
+    <string name="our_dishes_text">Nuestros Platos</string>
+    <string name="google_text">Google</string>
+
+    <string name="view_comments_text">Ver Comentarios</string>
+    <string name="total_text">Total</string>
+</resources>
