@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Tu Comida</string>
+    <string name="user_text">User</string>
+    <string name="password_text">Password</string>
+    <string name="login_text">Login</string>
+    <string name="login_google_text">Login with Google</string>
+    <string name="register_text">Sing Up</string>
+    <string name="google_register_text">Login With </string>
+    <string name="google_login_text">Login With Google</string>
+
+
+    <string name="dish_text">Dish</string>
+    <string name="name_text">Name</string>
+    <string name="aprox_price_text">Approximated Price</string>
+
+
+    <string name="order_title_text">Order</string>
+    <string name="adress_text">Address</string>
+    <string name="number_of_dishes">Number of Dishes</string>
+    <string name="approximate_value">Approximated Price</string>
+    <string name="domicile_text">Home Delivery</string>
+    <string name="order_confirm_text">Confirm Order</string>
+    <string name="register_text2">Sing Up</string>
+
+
+    <string name="user_name_text">User</string>
+    <string name="email_text">Email</string>
+    <string name="cancel_text">Cancel</string>
+
+    <string name="comment_text">Comments</string>
+    <string name="add_comment_text">Add a Comment</string>
+    <string name="send_text">Send</string>
+
+    <string name="ingredients_text">Ingredients</string>
+    <string name="time_text">Preparation Time</string>
+    <string name="difficulty_text">Difficulty</string>
+    <string name="step_text">Steps</string>
+    <string name="video_text">Preparation Video</string>
+    <string name="ask_ingredients_text">Ask Ingredients</string>
+
+    <string name="our_dishes_text">Our Dishes</string>
+    <string name="google_text">Google</string>
+
+    <string name="view_comments_text">Comments</string>
+    <string name="total_text">Total</string>
+    <string name="sended_text">Your order will arrive as soon as possible, Thank you for your purchase!</string>
+</resources>

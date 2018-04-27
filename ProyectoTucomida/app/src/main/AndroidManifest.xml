@@ -11,28 +11,37 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
+            android:theme="@style/OwrTheme"></activity>
+        <activity
+            android:name=".LoginActivity"
             android:theme="@style/OwrTheme">
         </activity>
-        <activity android:name=".LoginActivity"
-            android:theme="@style/OwrTheme">
+        <activity
+            android:name=".GoogleLoginActivity"
+            android:theme="@style/OwrTheme" />
+        <activity
+            android:name=".DishesListActivity"
+            android:theme="@style/OwrTheme" />
+        <activity
+            android:name=".OrderActivity"
+            android:theme="@style/OwrTheme" />
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/OwrTheme" />
+        <activity
+            android:name=".DishDetailActivity"
+            android:theme="@style/OwrTheme" />
+        <activity
+            android:name=".CommentsActivity"
+            android:theme="@style/OwrTheme" />
+        <activity android:name=".SplashActivity"
+            android:theme="@style/OwrTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".GoogleLoginActivity"
-            android:theme="@style/OwrTheme"/>
-        <activity android:name=".DishesListActivity"
-            android:theme="@style/OwrTheme"/>
-        <activity android:name=".OrderActivity"
-            android:theme="@style/OwrTheme"/>
-        <activity android:name=".RegisterActivity"
-            android:theme="@style/OwrTheme"/>
-        <activity android:name=".DishDetailActivity"
-            android:theme="@style/OwrTheme"/>
-        <activity android:name=".CommentsActivity"
-            android:theme="@style/OwrTheme"></activity>
     </application>
 
 </manifest>

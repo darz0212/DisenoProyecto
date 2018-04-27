@@ -65,7 +65,7 @@ public class OrderActivity extends AppCompatActivity {
 
                 @Override
                 public void afterTextChanged(Editable s) {
-                    if (quantity.getText().length() >= 0) {
+                    if (quantity.getText().length() > 0) {
                         int count = Integer.parseInt(String.valueOf(quantity.getText()));
                         DecimalFormat formatea;
                         float totalAprox = dishItem.getApproximatePrice() * count;
@@ -86,7 +86,7 @@ public class OrderActivity extends AppCompatActivity {
             confirmOrderBtn.setOnClickListener ( new View.OnClickListener () {
                 @Override
                 public void onClick(View view) {
-                    Toast.makeText(OrderActivity.this,"Su pedido llegara lo mas pronto posible, !Gracias por su compra¡ ",Toast.LENGTH_LONG).show();
+                    Toast.makeText(OrderActivity.this,R.string.sended_text,Toast.LENGTH_LONG).show();
                     Intent intent = new Intent ( OrderActivity.this, DishesListActivity.class );
                     startActivity ( intent );
                 }

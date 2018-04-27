@@ -51,7 +51,7 @@ public class DishDetailActivity extends AppCompatActivity {
 
             name.setText(dishItem.getName());
             ingredients.setText(dishItem.getIngredients()+"");
-            preparationTime.setText(dishItem.getPreparationTime()+"");
+            preparationTime.setText(dishItem.getPreparationTime()+" min");
             difficulty.setText(dishItem.getDifficulty()+"");
             steps.setText(dishItem.getSteps()+"");
             approximatePrice.setText("$"+formatedPrice);

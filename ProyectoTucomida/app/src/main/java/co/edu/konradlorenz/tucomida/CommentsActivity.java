@@ -52,7 +52,7 @@ public class CommentsActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Comment addingComment = new Comment("Me","Me",newComment.getText()+"");
-                    commentList.add(addingComment);
+                    commentList.add(0,addingComment);
                     adapter.notifyDataSetChanged();
                 }
             } );
