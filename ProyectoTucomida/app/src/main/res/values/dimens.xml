@@ -17,5 +17,13 @@
     <dimen name="dish_overflow_height">30dp</dimen>
     <dimen name="dish_overflow_margin_top">10dp</dimen>
     <dimen name="dish_image_height">160dp</dimen>
+    <dimen name="large_boton_text">20dp</dimen>
+    <dimen name="large_text">28dp</dimen>
+    <dimen name="large_text_secondary">24dp</dimen>
+    <dimen name="xlarge_title">36dp</dimen>
+    <dimen name="xlarge_text">30dp</dimen>
+    <dimen name="image_large">250dp</dimen>
+    <dimen name="image_xlarge">350dp</dimen>
+
 
 </resources>

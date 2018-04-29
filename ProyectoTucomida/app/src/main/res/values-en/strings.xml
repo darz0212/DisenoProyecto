@@ -44,4 +44,5 @@
     <string name="view_comments_text">Comments</string>
     <string name="total_text">Total</string>
     <string name="sended_text">Your order will arrive as soon as possible, Thank you for your purchase!</string>
+    <string name="logout_text">Logout</string>
 </resources>

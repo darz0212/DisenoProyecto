@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#6acb9a</color>
-    <color name="colorPrimaryDark">#08AE9E</color>
+    <color name="colorPrimaryDark">#0821ae</color>
     <color name="colorAccent">#FF4081</color>
 
     <color name="shadow">#88000000</color>
@@ -99,7 +99,7 @@
     <color name="blue_500">#5677fc</color>
     <color name="blue_600">#4e6cef</color>
     <color name="blue_700">#455ede</color>
-    <color name="blue_800">#3b50ce</color>
+    <color name="blue_800">#8c9bf0</color>
     <color name="blue_900">#2a36b1</color>
     <color name="blue_a100">#a6baff</color>
     <color name="blue_a200">#6889ff</color>
