@@ -1,6 +1,7 @@
 package co.edu.konradlorenz.tucomida;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.content.res.Resources;
 import android.graphics.Rect;
 import android.support.v7.app.AppCompatActivity;
@@ -30,6 +31,7 @@ public class CommentsActivity extends AppCompatActivity {
     private Button addCommentBtn;
 
     private Dish dishItem;
+    private int dpheight,dpWidth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +41,12 @@ public class CommentsActivity extends AppCompatActivity {
         commentList = new ArrayList<>();
 
 
+        dpheight = CommentsActivity.this.getResources().getConfiguration().screenHeightDp;
+        dpWidth=CommentsActivity.this.getResources().getConfiguration().screenWidthDp;
+
+        if(dpheight < 600 && dpWidth<600){
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        }
 
         Bundle parameters = getIntent().getExtras();
 

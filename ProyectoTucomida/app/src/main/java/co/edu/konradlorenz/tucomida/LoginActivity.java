@@ -1,5 +1,6 @@
 package co.edu.konradlorenz.tucomida;
 
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -16,11 +17,19 @@ public class LoginActivity extends AppCompatActivity {
     EditText userEmail;
     EditText password;
     TextView register;
+    private int dpheight,dpWidth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         //supportRequestWindowFeature ( Window.FEATURE_NO_TITLE );
+
+        dpheight = LoginActivity.this.getResources().getConfiguration().screenHeightDp;
+        dpWidth=LoginActivity.this.getResources().getConfiguration().screenWidthDp;
+
+        if(dpheight < 600 && dpWidth<600){
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        }
 
         btnLogin = (Button) findViewById ( R.id.loginButton );
         btnGoogleLogin = (Button) findViewById ( R.id.googleLoginButton );

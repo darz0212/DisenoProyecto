@@ -1,6 +1,7 @@
 package co.edu.konradlorenz.tucomida;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -19,11 +20,20 @@ public class OrderActivity extends AppCompatActivity {
     private TextView aproxPrice,domicilePrice, total;
     private Button confirmOrderBtn, cancelOrderBtn;
     private Dish dishItem;
+    private int dpheight,dpWidth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order);
+
+        dpheight = OrderActivity.this.getResources().getConfiguration().screenHeightDp;
+        dpWidth=OrderActivity.this.getResources().getConfiguration().screenWidthDp;
+
+        if(dpheight < 600 && dpWidth<600){
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        }
+
         Bundle parameters = getIntent().getExtras();
 
         if(parameters != null){
@@ -66,19 +76,21 @@ public class OrderActivity extends AppCompatActivity {
                 @Override
                 public void afterTextChanged(Editable s) {
                     if (quantity.getText().length() > 0) {
-                        int count = Integer.parseInt(String.valueOf(quantity.getText()));
-                        DecimalFormat formatea;
-                        float totalAprox = dishItem.getApproximatePrice() * count;
-                        formatea = new DecimalFormat("###,###.##");
-                        String formatedPrice = formatea.format(totalAprox);
-                        aproxPrice.setText("$" + formatedPrice);
+                        if (Integer.parseInt(String.valueOf(quantity.getText())) < 99) {
+                            int count = Integer.parseInt(String.valueOf(quantity.getText()));
+                            DecimalFormat formatea;
+                            float totalAprox = dishItem.getApproximatePrice() * count;
+                            formatea = new DecimalFormat("###,###.##");
+                            String formatedPrice = formatea.format(totalAprox);
+                            aproxPrice.setText("$" + formatedPrice);
 
-                        String domicileFormated = formatea.format(5000);
-                        domicilePrice.setText("$" + domicileFormated);
+                            String domicileFormated = formatea.format(5000);
+                            domicilePrice.setText("$" + domicileFormated);
 
-                        float totalPrice = totalAprox + 5000;
-                        String totalFormated = formatea.format(totalPrice);
-                        total.setText("$" + totalFormated);
+                            float totalPrice = totalAprox + 5000;
+                            String totalFormated = formatea.format(totalPrice);
+                            total.setText("$" + totalFormated);
+                        }
                     }
                 }
             });

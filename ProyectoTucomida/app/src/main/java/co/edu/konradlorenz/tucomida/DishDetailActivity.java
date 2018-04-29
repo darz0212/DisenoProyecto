@@ -1,6 +1,7 @@
 package co.edu.konradlorenz.tucomida;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -21,11 +22,20 @@ public class DishDetailActivity extends AppCompatActivity {
 
     private Dish dishItem;
     public TextView comments;
+    private int dpheight,dpWidth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dish_detail);
+
+        dpheight = DishDetailActivity.this.getResources().getConfiguration().screenHeightDp;
+        dpWidth=DishDetailActivity.this.getResources().getConfiguration().screenWidthDp;
+
+        if(dpheight < 600 && dpWidth<600){
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        }
 
         Bundle parameters = getIntent().getExtras();
 
