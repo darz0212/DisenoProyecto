@@ -46,4 +46,5 @@
     <string name="sended_text">Su pedido llegara lo mas pronto posible, !Gracias por su compra¡</string>
 
     <string name="logout_text">Desconectarse</string>
+    <string name="todo">TODO</string>
 </resources>
